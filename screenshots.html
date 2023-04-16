@@ -1,0 +1,27 @@
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="chaza.css" rel="stylesheet" type="text/css">
+<title>chazaswag</title>
+<link rel="shortcut icon" href="images/logo.ico">
+    </head>
+    <body>
+<ul style="position:static;top:0%">
+    <li><a href="index.html">home</a></li>
+    <li ><a href="links.html">links</a></li>
+    <li><a href="screenshots.html">screenshots</a></li>
+    <li><a href="school.html">academics</a></li>
+    <li><a href="projects.html">projects</a></li>
+</ul>
+</br>
+<div class="box">
+    <h2>Refresh the page for a new random screenshot</h2>
+    <img class="home" src="" id="imagerandom"/>
+    <script>
+    document.getElementById('imagerandom').src = "images/random/" +(Math.floor((Math.random() * 50) + 1))+ ".png";
+</script>
+    
+</div>
+ </body>
+
+</html>

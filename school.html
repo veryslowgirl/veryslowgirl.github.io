@@ -1,0 +1,54 @@
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="chaza.css" rel="stylesheet" type="text/css">
+<title>chazaswag</title>
+<link rel="shortcut icon" href="images/logo.ico">
+    </head>
+    <body>
+<ul style="position:static;top:0%">
+    <li><a href="index.html">home</a></li>
+    <li ><a href="links.html">links</a></li>
+    <li><a href="screenshots.html">screenshots</a></li>
+    <li><a href="school.html">academics</a></li>
+    <li><a href="projects.html">projects</a></li>
+</ul>
+</br>
+<div class="box">
+    <h2><u> grades n stuff </u></h2>
+  <button onclick="gradefunction1()">GCSEs</button>
+  <div style="display:none" id="grade1" class="grades" ><h2> Maths - 5</br> English Lang - 5</br> English Lit - 6</br> Sciences - 5/5/5 </br> Drama (BTEC) - L2M</h2></div>
+
+  <button onclick="gradefunction2()">A-Levels</button>
+  <div style="display:none" id="grade2" class="grades"><h2>Currently studying <br> ICT (CTEC) <br> Drama <br> Buisness (BTEC) </h2></div>
+
+  <button onclick="gradefunction3()" >Extra</button>
+  <div style="display:none" id="grade3" class="grades"><h2> hi</h2> </div>
+  </div>
+ 
+ <script>
+    function gradefunction1() {
+        var x = document.getElementById("grade1");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+    x.style.display = "none"; }
+    }
+    function gradefunction2() {
+        var x = document.getElementById("grade2");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+    x.style.display = "none"; }
+    }
+    function gradefunction3() {
+        var x = document.getElementById("grade3");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+    x.style.display = "none"; }
+    }
+  </script>
+  
+ </body>
+</html>

@@ -6,42 +6,43 @@
 <link rel="shortcut icon" href="images/logo.ico">
     </head>
     <body>
-<ul style="position:static;top:0%">
+	<ul style="position:static;top:0%">
     <li><a href="index.html">home</a></li>
+    <li><a href="school.html">about me</a></li>
     <li ><a href="links.html">links</a></li>
     <li><a href="screenshots.html">screenshots</a></li>
-    <li><a href="school.html">academics</a></li>
     <li><a href="projects.html">projects</a></li>
 </ul>
 </br>
 <div class="box">
+<p>This was originally something else but i repurposed it.<br> That is why these stupid boxes are here. But i wanna use them anyways because i do not care.</p>
     <h2><u> grades n stuff </u></h2>
-  <button onclick="gradefunction1()">GCSEs</button>
-  <div style="display:none" id="grade1" class="grades" ><h2> Maths - 5</br> English Lang - 5</br> English Lit - 6</br> Sciences - 5/5/5 </br> Drama (BTEC) - L2M</h2></div>
+  <button onclick="boxtoggle1()">Main Stuff</button>
+  <div style="display:none" id="grade1" class="grades"><h2>I am 18. I like modding and games. I am Neurodivergent for sure. <br> I like bendy and the ink machine a lot.<br> i work on a lot of dumb small projects.</h2></div>
 
-  <button onclick="gradefunction2()">A-Levels</button>
-  <div style="display:none" id="grade2" class="grades"><h2>Currently studying <br> ICT (CTEC) <br> Drama <br> Buisness (BTEC) </h2></div>
+  <button onclick="boxtoggle2()">My Interests</button>
+  <div style="display:none" id="grade2" class="grades"><h2>his list is a fraction of what I actually like though. I kinda like a lot of stuff. Portal, Bendy, Kirby, Fortnite, Neon White, a lotta nintendo stuff and a bunch of indie games. </br>I like console modding and games mechanically. I enjoy working on stuff tho I give up pretty easy so don't expect anything!!!</h2></div>
 
-  <button onclick="gradefunction3()" >Extra</button>
-  <div style="display:none" id="grade3" class="grades"><h2> hi</h2> </div>
+  <button onclick="boxtoggle3()" >Extra Stuff</button>
+  <div style="display:none" id="grade3" class="grades"><h2>Currently wanting to become a games designer/programmer. I have made small projects, though very small based off of stuff I like. I have worked with languages like C#, Java and Lua as well Html and Javascript. But most of these have been really small and relatively bad prototypes for school.</h2></div>
   </div>
  
  <script>
-    function gradefunction1() {
+    function boxtoggle1() {
         var x = document.getElementById("grade1");
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
     x.style.display = "none"; }
     }
-    function gradefunction2() {
+    function boxtoggle2() {
         var x = document.getElementById("grade2");
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
     x.style.display = "none"; }
     }
-    function gradefunction3() {
+    function boxtoggle3() {
         var x = document.getElementById("grade3");
         if (x.style.display === "none") {
             x.style.display = "block";

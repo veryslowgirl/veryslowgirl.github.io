@@ -15,8 +15,10 @@ ul {
 }
 @media screen and (max-width: 650px) {
     ul{
-        position:sticky; 
-        width: auto;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0;
     }
 }
 li {

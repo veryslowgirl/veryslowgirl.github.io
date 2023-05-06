@@ -16,10 +16,14 @@
 </br>
 <div class="box">
     <h2>Refresh the page for a new random screenshot</h2>
+	<button onclick="generateRandomScreenshot()">press for a new screenshot!</button>
     <img class="home" src="" id="imagerandom"/>
     <script>
-    document.getElementById('imagerandom').src = "images/random/" +(Math.floor((Math.random() * 66) + 1))+ ".png";
-</script>
+	generateRandomScreenshot()
+	function generateRandomScreenshot() {
+    document.getElementById('imagerandom').src = "images/random/" + (Math.floor(Math.random() * 66) + 1) + ".png";
+	}
+	</script>
     
 </div>
  </body>

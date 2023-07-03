@@ -40,6 +40,23 @@ li {
     letter-spacing: normal;
     text-transform: none;
 }
+li a {
+    display: block;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #eb8bf7;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #eb8bf7;
+    color: #651c93;
+}
     @media screen and (max-width: 650px) {
         li {
             margin-left:5vw;

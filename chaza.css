@@ -1,48 +1,36 @@
 /* CSS Document */
 body {
-	background-color:#000000;
+    background-color: #000000;
 }
+
 ul {
     list-style-type: none;
     margin: auto;
-    padding: auto;
+    padding: 0;
     overflow: hidden;
     background-color: #651c93;
-    width: 40%;
     border-radius: 25px;
     position: static;
     top: 0%;
-}
-
-@media screen and (max-width: 650px) {
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        list-style: none;
-        width: 90%;
-        padding: 10px;
-        margin: auto;
-    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
 }
 
 li {
     margin-top: 1%;
     margin-bottom: 1%;
-    margin-left: 2vw;
-    margin-right:wvw;
-    float:left;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
     font-style: normal;
     font-weight: bold;
     letter-spacing: normal;
     text-transform: none;
+    padding: 10px 20px;
 }
+
 li a {
-    display: block;
-    padding: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 100%;
     font-style: normal;
@@ -51,20 +39,20 @@ li a {
     text-transform: none;
     color: #eb8bf7;
     text-decoration: none;
+	padding-left: 3vh;
+	padding-right: 3vh;
+	padding-top:2vh;
+	padding-bottom:2vh;
 }
 
-li a:hover {
-    background-color: #eb8bf7;
-    color: #651c93;
+a.active {
+  background-color: #eb8bf7;
+  color: #651c93;
 }
-    @media screen and (max-width: 650px) {
-        li {
-            margin-left:5vw;
-            float: left;
-            margin-right:5vw;
-        } 
-     }
-  
+a:hover {
+  background-color: #eb8bf7;
+  color: #651c93;
+}
   a {
     color: #eb8bf7;
     text-decoration: none;
@@ -102,7 +90,7 @@ color: #eb8bf7;
 text-align: center;
 }
 .home {
-    width:100%;
+    width:80%;
 }
 .logo {
     width: 30px;

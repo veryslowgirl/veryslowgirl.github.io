@@ -8,20 +8,20 @@
     <body>
 	<ul style="position:static;top:0%">
     <li><a href="index.html">home</a></li>
-    <li><a href="me.html">about me</a></li>
+    <li><a href="me.html">me!</a></li>
     <li ><a href="links.html">links</a></li>
-    <li><a href="screenshots.html">screenshots</a></li>
+    <li><a class="active" href="screenshots.html">screenshots</a></li>
     <li><a href="projects.html">projects</a></li>
 </ul>
 </br>
 <div class="box">
     <h2>Refresh the page for a new random screenshot</h2>
 	<button onclick="generateRandomScreenshot()">press for a new screenshot!</button>
-    <img class="home" src="" id="imagerandom"/>
+    <img style="width:100%" class="home" src="" id="imagerandom"/>
     <script>
 	generateRandomScreenshot()
 	function generateRandomScreenshot() {
-    document.getElementById('imagerandom').src = "images/random/" + (Math.floor(Math.random() * 66) + 1) + ".png";
+    document.getElementById('imagerandom').src = "images/random/" + (Math.floor(Math.random() * 68) + 1) + ".png";
 	}
 	</script>
     

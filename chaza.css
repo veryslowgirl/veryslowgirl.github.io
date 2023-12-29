@@ -1,14 +1,20 @@
 /* CSS Document */
 body {
     background-color: #000000;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
+
+@media screen and (max-width: 650px) {
+    .box,ul,button{
+        width: 100%;
+    } 
+ }
 
 ul {
     list-style-type: none;
     margin: auto;
     padding: 0;
     overflow: hidden;
-    background-color: #651c93;
     border-radius: 25px;
     position: static;
     top: 0%;
@@ -18,46 +24,27 @@ ul {
     max-width: 700px;
 }
 
-li {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
+li, li a {
+	color: #eb8bf7;
+    font-size: large;
     font-style: normal;
     font-weight: bold;
     letter-spacing: normal;
     text-transform: none;
-    padding: 10px 20px;
+	padding: 2vh 3vh;
+    margin: 1% 0;
 }
 
-li a {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 100%;
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: normal;
-    text-transform: none;
-    color: #eb8bf7;
-    text-decoration: none;
-	padding-left: 3vh;
-	padding-right: 3vh;
-	padding-top:2vh;
-	padding-bottom:2vh;
-}
 
-a.active {
-  background-color: #eb8bf7;
-  color: #651c93;
-}
-a:hover {
-  background-color: #eb8bf7;
-  color: #651c93;
-}
   a {
     color: #eb8bf7;
-    text-decoration: none;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+   
   }
+  a.active,a:hover {
+  background-color: #eb8bf7;
+  color: #651c93;
+}
+
 .box {
   margin: 0;
   padding: 10;
@@ -66,31 +53,32 @@ a:hover {
   border: 2px solid #c961d7;
   width: 60%;
   margin-left: 20%;
+  margin-bottom: 1vh;
   border-radius: 25px;
   height:auto;
 }
-@media screen and (max-width: 650px) {
-    .box {
-        margin-left:auto;
-        width: auto;
-    } 
- }
 
 h2 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-size: large;
 color: #eb8bf7;
 text-align: center;
 font-weight: bold;
 }
 p {
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 font-size: medium;
 color: #eb8bf7;
 text-align: center;
 }
-.home {
-    width:80%;
+.home, .topster, .random {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.random {
+	width: 80%;
+}
+.topster {
+	width: 100%;
 }
 .logo {
     width: 30px;
@@ -98,25 +86,17 @@ text-align: center;
     margin-right: 1vw;
 }
 button {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-	text-align: center;
+  text-align: center;
   background-color: #eb8bf7;
   color: #651c93;
   padding: 14px 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2vh;
   border: none;
   cursor:pointer;
-  width: 30%;
   font-weight: bold;
-  display: block;
 }
+
 button:hover {
     opacity: 0.8;
   }
-  @media screen and (max-width: 650px) {
-    button {
-        width: 100%;
-    } 
- }

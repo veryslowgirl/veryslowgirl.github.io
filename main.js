@@ -1,3 +1,12 @@
+let images = [];
+function onInit()
+{
+	for (let n = 1; n <= 67; n++)
+	{
+	images.push("images/random/" + n + ".webp");
+	}
+}
+
 function boxtoggle(page) {
 	if (page <= 5)
 	{
@@ -23,6 +32,7 @@ for (let n = 1; n <= 4; n++)
 	}
 }
 
-function generateRandomScreenshot() {
-	document.getElementById('imagerandom').src = "images/random/" + (Math.floor(Math.random() * 68) + 1) + ".png";
+function RandomScreenshot() {
+	document.getElementById("imagerandom").src = images[Math.floor(Math.random() * images.length)];
 }
+window.onload = onInit();

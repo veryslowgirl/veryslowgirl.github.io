@@ -46,7 +46,7 @@ li, li a {
   overflow: hidden;
   background-color: #000;
   border: 2px solid #c961d7;
-position: sticky;
+  position: sticky;
   width: 60%;
   margin: auto;
   margin-bottom: 1vh;

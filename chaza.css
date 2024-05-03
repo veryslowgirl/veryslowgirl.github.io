@@ -70,6 +70,20 @@ text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 }
+.landingbig {
+width:80%; 
+outline:2px groove #eb8bf7;
+}
+.landingsmallleft {
+width:40%; 
+outline:2px groove #eb8bf7;
+margin-right:5%;
+}
+
+.landingsmallright {
+width:40%; 
+outline:2px groove #eb8bf7;
+}
 .random {
 	margin-top: 1vw;
 	margin-bottom: 1vw;
@@ -79,9 +93,8 @@ text-align: center;
 	width: 100%;
 }
 .logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 1vw;
+    width: 20px;
+    height: 20px;
 }
 button {
   text-align: center;
@@ -107,10 +120,16 @@ button:hover {
 	margin-top: 1vw;
 	margin-bottom: 1vw;
     } 
-		.box
+	.box
 	{
 		width: 100%;
 		padding: 0;
 		border-radius: 0px;
 	}
+	.landingsmallleft,.landingsmallright {
+	width:80%;
+	margin-right:0%;
+}
+
  }
+

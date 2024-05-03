@@ -23,7 +23,7 @@ function boxtoggle(page) {
 }
 function boxreset()
 {
-for (let n = 1; n <= 4; n++)
+for (let n = 1; n <= 3; n++)
 	{
 	 	var x = document.getElementById(n);
 		if (x.style.display === "block") {

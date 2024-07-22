@@ -32,7 +32,29 @@ for (let n = 1; n <= 3; n++)
 	}
 }
 
-function RandomScreenshot() {
-	document.getElementById("imagerandom").src = images[Math.floor(Math.random() * images.length)];
-}
-window.onload = onInit();
+let stars = []; 
+function sparkle() {
+        for (let n = 0; n <= 30; n++) {
+			var width = window.innerWidth;
+			var height = window.innerHeight;
+            let img = new Image(45);
+            img.src = "images/star.gif";
+            img.className = "star";
+            img.style.left = Math.floor(Math.random() * width) + "px";
+            img.style.top = Math.floor(Math.random() * height) + "px";
+			let hueRotation = Math.floor(Math.random() * 360);
+            img.style.filter = `hue-rotate(${hueRotation}deg)`;
+            setTimeout(() => {
+					document.getElementById('booty').appendChild(img);
+					stars.push(img); 
+					if (stars.length > 30) {
+						let oldStar = stars.shift(); 
+						oldStar.remove();
+					}
+				}, n * 251);
+                
+				if (n == 30) {
+					setTimeout(() => {sparkle(); }, n * 251);
+                }
+            }
+        }

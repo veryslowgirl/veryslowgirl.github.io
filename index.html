@@ -8,13 +8,13 @@
     		<meta name="description" content="a website for stuff about meee :3" />
 
 	</head>
-	<body>
-		<ul> <li><a class="active">chazaswag</a></li> </ul>
+	<body onload="sparkle()">
+	 <div id="booty"></div>
+		
 		<div class="box">
-			<h2> Hi. This is kinda just a place to store stuff for myself.
-			<br> Press below to navigate.</h2>
+		<ul> <li><a class="active">chazaswag</a></li> </ul>
 			<ul>
-				<button onclick="boxtoggle(1)">About Me</button><button onclick="boxtoggle(2)">Links</button><button onclick="boxtoggle(3);RandomScreenshot();">Extras</button>
+				<button onclick="boxtoggle(1);">About Me</button><button onclick="boxtoggle(2)">Links</button></button>
 			</ul>
 		</div>
 
@@ -23,11 +23,7 @@
 			<img alt = "mascot art by @portalpilled" class="home" src="images/icons/characters/me.png"><h2><u> I am Lily, What do I do? </u></h2>
 				<p class="info" >
 I have made small games, made an album and made many mods. Many little things. <br><br>I have an interest in video games. Modding, game development, programming and game music are all areas I like to explore though I am still pretty inexperienced in most of them, with only a few small projects.<br><br>I also like playing and having fun and being silly, similar to a cute animal (as pictured above). If you were wondering....</p>
-				<ul> <button onclick="boxtoggle(100)">Can I know more?</button> </ul>
-				<div style="display:none" id="100" class="stuff"><ul><p class="landingbig">I have more recently experimented with music. My EP "Look Ahead" is the first proper thing I have released (if it is out when ur reading this.) Its a bunch of video gamey stuff and it is super short, but hey i made it in a week. It is kinda loosley based on some amount of lore and themes and characters but it isn't really possible to pick up from the music itself.I would really appreciate it if you were to give it a listen!!! My music is on spotify soundcloud and like. 99% of other things.</p>
-				<p class="landingsmallleft"> I also made my cute little game <img alt ="catbox logo" class="logo" src="images/icons/projects/entity.png"><a href="https://chazaswag.itch.io/catbox"target=”_blank”><u>Cat.Box</u> </a> a little while ago, then i remade it in godot which just made it a lot easier to figure out compared to love2d which I originally made it in LOL. It is a silly little high score based game which is very much based on an undertale fight mechanic. It was my first game I made made. Besides that I HAVE made <img alt ="bendy rpg logo" class="logo" src="images/icons/projects/bendy.png"><a href="https://chazaswag.itch.io/bendy-rpg"target=”_blank”><u>Bendy:RPG</u> </a> in rpg maker but I count that a little less as it was a complete remake of chapter one of BATIM. So it wasnt that interesting xd.</p>
-				<p class="landingsmallright"> On the topic of bendy. The game is playable thanks to me. When i gave a fuck about the game. It was like. Stupidly unplayable in silly ways (mostly just becaus the creator lost the project files LOL) so I started fixing them so that I could care about the game. The<img alt ="gamebanana logo" class="logo" src="images/icons/gamebanana.png"><a href="https://gamebanana.com/mods/471415"target=”_blank”><u>Quality Of Life Mod</u> </a> was one of the first proper code based mod I made and honestly it did teach me quite a bit about c# and unity!! I also made a few other silly things like a speedrun mod. I kinda still think it is the best way to play the game, even if just the patch to remove a save file ruining bug. You should check out my gamebanana For more ab this!</p></ul>
-				</div>
+				<ul> <button onclick="boxtoggle(3)">Can I know more?</button> </ul>
 			</div>
   		</div>
 		<div class="box" id="2" style="display:none">
@@ -44,9 +40,16 @@ I have made small games, made an album and made many mods. Many little things. <
 		</div>
 
 		<div  class="box" id="3" style="display:none">
-			<img alt ="doodle logo for extra stuff"  class="home" src="images/icons/characters/projects.png"><div><h2><u> Extra stuff! </u></h2>
-				<p>Things and stuff I would like somewhere. Yay Yippee.</p>
-				<ul><button onclick="RandomScreenshot();">press for a new screenshot!</button></ul><img alt ="random image" class="random" src="" id="imagerandom"/>	
+		<p> yes u can know more...</p>
+			<img alt ="doodle logo for extra stuff"  class="home" src="images/icons/characters/projects.png"><div><h2><u> More stuffs </u></h2>
+
+				<ul><p>I sorta make music. Its instrumental, vgm inspired music but hey im new. <br>I released an EP "Look Ahead" which follows three kids who want to climb a mountain. It is presented as an rpg with gorgeous art and character designs from my friend <image alt = "look ahead album cover, featuring three kids walking in a forest" class="logo" src="images/lookahead.webp"><a href="https://x.com/portalpilled"target=”_blank”><u>portalpilled <3</u> </a> + it is up anywhere you would normally listen!! spotify, bandcamp soundcloud whatever. if u wanna please have a listen :) </p>
+				<p>Speaking of music, here's my next song if u wanna listen ;P</p>
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1873062483%3Fsecret_token%3Ds-L978xINOT9a&color=%23ff0385&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/chazaswag" title="chazaswag" target="_blank" style="color: #cccccc; text-decoration: none;">chazaswag</a> · <a href="https://soundcloud.com/chazaswag/lullaby/s-L978xINOT9a" title="Lullaby" target="_blank" style="color: #cccccc; text-decoration: none;">Lullaby</a></div>
+				<p><br>I also made a cute little game <img alt ="catbox logo" class="logo" src="images/icons/projects/entity.png"><a href="https://chazaswag.itch.io/catbox"target=”_blank”><u>Cat.Box</u> </a> a little while ago. <br> It is a silly little high score based game which is very much based on an undertale fight mechanic. <br>
+<iframe frameborder="0" src="https://itch.io/embed/2468829?bg_color=000000&amp;fg_color=9000FF&amp;link_color=9000FF&amp;border_color=333333" width="552" height="167"><a href="https://chazaswag.itch.io/catbox">cat.box by chazaswag</a></iframe>
+				<br>Besides this I have also done some work on a bendy and the ink machine rpg remake<img alt ="bendy rpg logo" class="logo" src="images/icons/projects/bendy.png"><a href="https://chazaswag.itch.io/bendy-rpg"target=”_blank”><u>Bendy:RPG</u> </a> in rpg maker, though it was never worked on after chapter 1. So its just. like 5 mins of the game.</p>
+			<iframe frameborder="0" src="https://itch.io/embed/1989665?bg_color=e4ac0f&amp;fg_color=000000&amp;link_color=000000&amp;border_color=333333" width="552" height="167"><a href="https://chazaswag.itch.io/bendy-rpg">Bendy:RPG by chazaswag</a></iframe>
 			</div>
 		</div>
 		<footer style="padding: 20vh;"></footer>

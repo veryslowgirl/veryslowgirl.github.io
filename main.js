@@ -39,7 +39,16 @@ function sparkle() {
         for (let n = 0; n <= 30; n++) {
 			var width = window.innerWidth;
 			var height = window.innerHeight;
-            let img = new Image(45);
+			var num;
+			if (honse == true )
+			{
+				num = 120;
+			}
+			else
+			{
+				num = 45;
+			}
+            let img = new Image(num);
 			if (honse == true )
 			{
 				img.src = "images/sitestuff/honse.gif";

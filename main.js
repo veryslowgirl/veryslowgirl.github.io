@@ -1,4 +1,5 @@
 let images = [];
+var honse = false;
 function onInit()
 {
 	for (let n = 1; n <= 67; n++)
@@ -6,12 +7,11 @@ function onInit()
 	images.push("images/random/" + n + ".webp");
 	}
 }
-
+function horse() {
+	honse = !honse;
+}
 function boxtoggle(page) {
-	if (page <= 5)
-	{
 	boxreset();
-	}
         var x = document.getElementById(page);
 		
         if (x.style.display === "none") {
@@ -21,6 +21,8 @@ function boxtoggle(page) {
 	else {
     		x.style.display = "none"; }
 }
+
+
 function boxreset()
 {
 for (let n = 1; n <= 3; n++)
@@ -38,7 +40,14 @@ function sparkle() {
 			var width = window.innerWidth;
 			var height = window.innerHeight;
             let img = new Image(45);
-            img.src = "images/star.gif";
+			if (honse == true )
+			{
+				img.src = "images/sitestuff/honse.gif";
+			}
+			else
+			{
+				img.src = "images/sitestuff/star.gif";
+			}
             img.className = "star";
             img.style.left = Math.floor(Math.random() * width) + "px";
             img.style.top = Math.floor(Math.random() * height) + "px";
@@ -47,13 +56,13 @@ function sparkle() {
             setTimeout(() => {
 					document.getElementById('booty').appendChild(img);
 					stars.push(img); 
-					if (stars.length > 30) {
+					if (stars.length > 25) {
 						let oldStar = stars.shift(); 
 						oldStar.remove();
 					}
 				}, n * 251);
                 
-				if (n == 30) {
+				if (n == 25) {
 					setTimeout(() => {sparkle(); }, n * 251);
                 }
             }

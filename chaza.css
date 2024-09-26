@@ -29,7 +29,9 @@ li, li a {
     margin: 1% 0;
 	border-radius: 25px;
 }
-
+p {
+	width:98%
+}
 
   a {
     color: #eb8bf7;
@@ -75,6 +77,11 @@ text-align: center;
     width: 20px;
     height: 20px;
 }
+.banner {
+    width:25vh;
+   
+}
+
 button {
   text-align: center;
   background-color: #eb8bf7;

@@ -18,7 +18,7 @@ function boxtoggle(page) {
 
 function boxreset()
 {
-for (let n = 1; n <= 3; n++)
+for (let n = 1; n <= 4; n++)
 	{
 	 	var x = document.getElementById(n);
 		if (x.style.display === "block") {
@@ -32,7 +32,7 @@ function sparkle() {
     var width = window.innerWidth;
     var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
-    for (let n = 0; n <= 35; n++) {
+    for (let n = 0; n <= 15; n++) {
         var num;
         if (honse == true) {
             num = 120;
@@ -45,7 +45,6 @@ function sparkle() {
         img.style.left = Math.floor(Math.random() * width) + "px";
         img.style.top = Math.floor(Math.random() * height) + "px";
         let hueRotation = Math.floor(Math.random() * 360);
-        img.style.filter = `hue-rotate(${hueRotation}deg)`;
         setTimeout(() => {
             document.getElementById('booty').appendChild(img);
             stars.push(img);
@@ -60,13 +59,13 @@ function sparkle() {
                 img.style.height = "45px";
             }
 
-            if (stars.length > 35) {
+            if (stars.length > 15) {
                 let oldStar = stars.shift();
                 oldStar.remove();
             }
         }, n * 180);
 
-        if (n == 25) {
+        if (n == 15) {
             setTimeout(() => {
                 sparkle();
             }, n * 180);

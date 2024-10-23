@@ -1,6 +1,7 @@
 body {
     background-image: url("imgs/sitestuff/bg.png"); ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Questrial", sans-serif;
+	font-weight: bold;
 }
 
 ul {
@@ -63,7 +64,12 @@ p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+a {
+	cursor: pointer;
+	text-decoration: underline;
+}
 button {
+	color: #000;
     text-align: center;
     padding: 14px 20px;
     margin: 10px auto;
@@ -82,17 +88,17 @@ button:hover {
     opacity: 0.8;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     ul, button {
         width: 90%;
         border-radius: 25px;
-        margin-top: 1vw;
+		margin: 0 auto;
+		margin-top: 1vw;
         margin-bottom: 1vw;
     }
     
     .box {
-        width: 90%; 
-        margin: 0 auto;
+        width: 95%;   
         padding: 10px;
     }
 }

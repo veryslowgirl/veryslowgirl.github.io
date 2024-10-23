@@ -29,7 +29,7 @@ for (let n = 1; n <= 4; n++)
 
 let stars = []; 
 function sparkle() {
-    var width = window.innerWidth;
+    var width = (window.innerWidth - 120);
     var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
     for (let n = 0; n <= 15; n++) {

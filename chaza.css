@@ -23,6 +23,18 @@ ul {
 	filter: drop-shadow(0px 0px 4px black);
 }
 
+.look-ahead {
+    filter: drop-shadow(0px 0px 4px #0FC616);
+}
+
+.lonely-space-bunny {
+    filter: drop-shadow(0px 0px 4px #F2086D);
+}
+
+.nout {
+    filter: drop-shadow(0px 0px 4px black);
+}
+
 h2,p {
     text-align: center;
 }

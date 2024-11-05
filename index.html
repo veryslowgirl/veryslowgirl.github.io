@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,128 +22,118 @@
 		<div class="box">
 			<ul>
 			    <img alt = "mascot art by @portalpilled" class="icon" onclick="horse();" src="imgs/icons/characters/meflip.png">
-				<button onclick="boxtoggle(1);">About Me</button>
-				<button onclick="boxtoggle(2)">Links</button>
-				<button onclick="boxtoggle(4)">Gallery</button>
+				<button onclick="boxtoggle(1, false);">About Me</button>
+				<button onclick="boxtoggle(2, false)">Gallery</button>
+				<button onclick="boxtoggle(3, false)">Music</button>
+				
 			</ul>
 		</div>
-
 
 															<!-- Info About me -->		
 
 
 
-	<div class="box" id="1" style="display:block">
-		<div>
+	<div  id="1" style="display:block">
+		<div class="box">
 			<img alt = "veryslowgirl logo" class="banner" src="imgs/sitestuff/veryslowgirl.png">
 			
 			<h2><u>Hi, I'm Lily!</u></h2>
 				<p class="info" >
-				Hi I am lily. I like experimenting with art, music, games and stuff like that!
-				<br><br>In terms of music, I am pretty new! I've been making some instrumental, video game-inspired music.
-				Each track has it's its own feel as I try to get to grips with making music LOL.
-				<br><br>I also love the idea of game design, i have a few smaller projects that I have started overtime!
-				(don’t get too excited though...).
-				<br><br>This page is mostly just to hold information for me...
-				Check above for links of platforms I am on, as well as a gallery of art n stuff!
-				<br><br>If you interested in more like. Actual stuff I have done.
-				Check below it is a bigger intro to me.
-				<ul> <button onclick="boxtoggle(3)">take me there!!!</button> </ul>
-		</div>
-  	</div>
-
-
-															<!-- More Info About me -->		
-
-
-
-	<div id="3" style="display:none">
-		<div class="box">	
+				I like experimenting with art, music, and game design.<br>
+				This page is a space to share what I have worked on!<br>
+				Check out the buttons at the top for more! <br>
+				:>
+				</p>
+		</div >
+				<div class="box">	
 		<ul>
-			<img alt = "banner saying music" src="imgs/sitestuff/banner.png" class="banner">
+			<img alt = "banner saying music" src="imgs/sitestuff/banner.png" onclick="boxtoggle(4, true);" class="banner">
+			<div id="4" style="display:block" >
 				<p>
+
 				In June of 2024 I released "Look Ahead!" It is an EP based around the idea of an RPG following 3 kids
 				and their journey up a mountain. <a onclick="boxtoggle(4);">The art</a> was done by my good friend drew, 
 				and the full EP was made in about a month or so.
 				It is video game inspired, specifically celeste with a mix of some chiptune songs and some other styles.
-				<br><br>
+
 				It is pretty short but itis worth checking out (if u wanna u can listen below, as well
 				as spotify, soundcloud and bandcamp + many others)
-				<br><ul><iframe width="560" height="315" src="https://www.youtube.com/embed/60UDzFBO100?si=_WteKhsVU3WAKpZc&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </ul>
+				<ul><iframe class="embed" width="560" height="315" src="https://www.youtube.com/embed/60UDzFBO100?si=_WteKhsVU3WAKpZc&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </ul>
 				</p>
 				
 				<p>
 				In November 2024 I released a second, shorter EP of 4 songs. It is called "Lonely Space Bunny Music."
-				<br><br>
 				It is about a lonely space bunny, hence the name.She is called Amie. She is alone, on a space station.
-				She has been alone for a long time. <br><br> You can listen to it below :>
-				<br><ul><iframe width="560" height="315" src="https://www.youtube.com/embed/WxjlnPSxCd4?si=q41zqoWjUQnFQguu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </ul>
+				She has been alone for a long time. You can listen to it below :>
+				<ul><iframe class="embed" width="560" height="315" src="https://www.youtube.com/embed/WxjlnPSxCd4?si=q41zqoWjUQnFQguu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </ul>
 				</p>
 				<p>
-				Besides this, I have other new songs and singles that are coming out over time!
-				It is worth checking my twitter to keep up to date with stuff like this 
-				Below are some recents.. :>
-				<br><br>
-			<ul>
-				<iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1921572518%3Fsecret_token%3Ds-v0pJgcbEOq3&color=%23ff0385&auto_play=false&hide_related=false&show_reposts=false&show_teaser=true&visual=true"></iframe>
-				<iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1879154520&color=%23ff0385&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-				<iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1934347265&color=%23ff0385&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+				I am making new music every now and again!
+				Check my twitter or soundcloud to be updated first!!<br><br>
+				My music is on most platforms inlcuding spotify, soundcloud, apple music and youtube.<br>
+				If you want a quick listen, check out the music tab at the top, or <a onclick="boxtoggle(3, false)"> click here <a>
+			</div>
 			</ul>
 			</p>
 			</div>
 			<div class="box">
-			<p>
-				<img alt = "banner saying games" src="imgs/sitestuff/banner2.png" class="banner">
-				<br><br><img alt ="catbox logo" class="logo" src="imgs/icons/projects/entity.png"><a href="https://chazaswag.itch.io/catbox"target=”_blank”>Cat.box</a>
+				<img alt = "banner saying games" src="imgs/sitestuff/banner2.png" onclick="boxtoggle(5, true);" class="banner">
+				<div id="5" style="display:block">
+				<p>
+				<img alt ="catbox logo" class="logo" src="imgs/icons/projects/entity.png"><a href="https://chazaswag.itch.io/catbox"target=”_blank”>Cat.box</a>
 				is the first game I ever made. It is a simple high score based game I made mostly in school.
 				I originally developed in love2d but I later recreated it in godot n put it on itch for fun ;)
-				Here is the link below if u wanted to try it out!<br>
+				Here is the link below if u wanted to try it out!
 				
-				<ul><iframe height="167" frameborder="0" src="https://itch.io/embed/2468829" width="552"><a href="https://chazaswag.itch.io/catbox">cat.box by chazaswag</a></iframe> </ul><p>
+				<ul><iframe class="embed" height="167" frameborder="0" src="https://itch.io/embed/2468829" width="552"><a href="https://chazaswag.itch.io/catbox">cat.box by chazaswag</a></iframe> </ul><p>
 				Besides this I have also done some work on a BATIM RPGMaker remake
 				<img alt ="bendy rpg logo" class="logo" src="imgs/icons/projects/bendy.png"><a href="https://chazaswag.itch.io/bendy-rpg"target=”_blank”>Bendy:RPG.</a>
 				It is a recreation of the first chapter which is about 5 minutes of actual gameplay haha. Though it is EVERY detail. I checked I promise.
-				<ul><iframe height="167" frameborder="0" src="https://itch.io/embed/1989665" width="552"><a href="https://chazaswag.itch.io/bendy-rpg">Bendy:RPG by chazaswag</a></iframe></ul>
+				<ul><iframe class="embed" height="167" frameborder="0" src="https://itch.io/embed/1989665" width="552"><a href="https://chazaswag.itch.io/bendy-rpg">Bendy:RPG by chazaswag</a></iframe></ul>
 				</p>
-				
-			<p>
+			</div>
 			</div>
 			<div class="box">
-				<br>
-				<img alt = "modding banner" src="imgs/sitestuff/banner3.png" class="banner">
-				<br><br>Something else I do a bunch every now and again is modding. I have released quite a few mods on gamebanana.
+				<img alt = "modding banner" src="imgs/sitestuff/banner3.png" onclick="boxtoggle(6, true);" class="banner">
+				<div id="6" style="display:block">
+				<p>
+				Something else I do a bunch every now and again is modding. I have released quite a few mods on gamebanana.
 				Some fixing games, some dumb jokes and some quality of life changes. Most notable are my Bendy and The Ink Machine mods.
 				Quality of Life (which is now outdated LOL) , is probably my best bendy mod I made, it is linked below.
-				<ul><a href="https://gamebanana.com/mods/471415"><img src="https://gamebanana.com/mods/embeddables/471415?type=large"/></a>
+				</p>
+				<ul><a class="embed" href="https://gamebanana.com/mods/471415"><img src="https://gamebanana.com/mods/embeddables/471415?type=large"/></a>
 				</ul>
-				<br><br>
+				<p>
 				In 2023 I released a few mods that fixed several core issues with the games code
 				My quality of life mod ended up becoming an update to the game with the help of one of the lead programmers.
-				Which is like maybe the coolest bragging rights.<br><br>
-				<img alt = "credits screenshot" src="imgs/sitestuff/bendy.png" class="banner"><br>
+				Which is like maybe the coolest bragging rights.
+				</p>
+				<img  alt = "credits screenshot" src="imgs/sitestuff/bendy.png" class="banner">
+			</div>	
 			</div>
-			</p>
-		</div>		
-	<div class="box" id="2" style="display:none">
-			<img alt = "doodle character for links" class="icon" src="imgs/icons/characters/me.png"><div><h2><u> Links </u></h2>
-				<p>Feel free to contact me. The best way is probably through twitter or discord...!</p>
-				<p><img alt = "twitter doodle" class="logo" src="imgs/icons/twitter.png"><a href="https://x.com/veryslowgirl" target=”_blank”><u>veryslowgirl</u> </a> </p>
-				<p><img alt = "youtube doodle" class="logo" src="imgs/icons/youtube.png"><a href="https://www.youtube.com/@chazaswag"target=”_blank”><u>veryslowgirl</u> </a> </p>
-				<p><img alt = "soundcloud doodle" class="logo" src="imgs/icons/sc.png"><a href="https://soundcloud.com/veryslowgirl/"target=”_blank”><u>veryslowgirl</u> </a> </p>
-				<p><img alt = "spotify doodle" class="logo" src="imgs/icons/spotify.png"><a href="https://open.spotify.com/artist/4NXx0K3dzPFILOFXjV8KKU?si=XHNFEdQ8TNWv9uVR8HLwGA"target=”_blank”><u>veryslowgirl</u> </a> </p>
-    			<p><img alt = "discord doodle" class="logo" src="imgs/icons/discord.png">@chazaswag</p>
-				<p><img alt = "itch.io doodle" class="logo" src="imgs/icons/itch.png"><a href="https://chazaswag.itch.io/" target=”_blank”><u>chazaswag</u> </a> </p>
-				<p><img alt = "gamebanana doodle" class="logo" src="imgs/icons/gamebanana.png"><a href="https://gamebanana.com/members/2118879" target=”_blank”><u>chazaswag</u> </a> </p>
-
+			
+			<div class="box">
+			<img alt = "banner saying music" src="imgs/sitestuff/banner4.png" onclick="boxtoggle(7, true);" class="banner">
+			<div id="7" style="display:block">
+			<p>Finally, feel free to contact me. The best way is probably through twitter or discord...!</p>
+			<p><img alt = "twitter doodle" class="logo" src="imgs/icons/twitter.png"><a href="https://x.com/veryslowgirl" target=”_blank”><u>veryslowgirl</u> </a> </p>
+			<p><img alt = "youtube doodle" class="logo" src="imgs/icons/youtube.png"><a href="https://www.youtube.com/@chazaswag"target=”_blank”><u>veryslowgirl</u> </a> </p>
+			<p><img alt = "soundcloud doodle" class="logo" src="imgs/icons/sc.png"><a href="https://soundcloud.com/veryslowgirl/"target=”_blank”><u>veryslowgirl</u> </a> </p>
+			<p><img alt = "spotify doodle" class="logo" src="imgs/icons/spotify.png"><a href="https://open.spotify.com/artist/4NXx0K3dzPFILOFXjV8KKU?si=XHNFEdQ8TNWv9uVR8HLwGA"target=”_blank”><u>veryslowgirl</u> </a> </p>
+    		<p><img alt = "discord doodle" class="logo" src="imgs/icons/discord.png">@chazaswag</p>
+			<p><img alt = "itch.io doodle" class="logo" src="imgs/icons/itch.png"><a href="https://chazaswag.itch.io/" target=”_blank”><u>chazaswag</u> </a> </p>
+			<p><img alt = "gamebanana doodle" class="logo" src="imgs/icons/gamebanana.png"><a href="https://gamebanana.com/members/2118879" target=”_blank”><u>chazaswag</u> </a> </p>
 		</div>
-	</div>
+		</div>
+		</div>
+
 	
 
 															<!-- Gallery of art!! -->		
 
 
 
-		<div  id="4" style="display:none">
+		<div  id="2" style="display:none">
 			<div class="box nout">
 			<img alt = "doodle character for links" class="icon" src="imgs/icons/characters/art.png"><div><h2><u> Gallery </u></h2>
 			</div></div>
@@ -151,16 +142,16 @@
 			
 			<p>Look ahead final album art, done by my friend drew (@portalpilled) + a cd concept later made using more art.</p>
 			<ul>
-			<img src="imgs/icons/art/lookahead.png" alt="Look Ahead Album Art" class="album-art">
-			<img src="imgs/icons/art/cd.png" alt="CD Album Art" class="album-art">
+			<img src="imgs/art/lookahead.png" alt="Look Ahead Album Art" class="album-art">
+			<img src="imgs/cd/cd2.png" alt="CD Album Art" class="album-art">
 			</ul>
 			
 			<p>Art for the three singles released before Look Ahead released.
 			<br>In order of "From up here" to "In there!?" to "It still boots!" All done by me.</p>
 			<ul>
-			<img src="imgs/icons/art/fromuphere.jpg" alt="From Up Here Album Art" class="album-art">
-			<img src="imgs/icons/art/inthere.PNG" alt="In There Album Art" class="album-art">
-			<img src="imgs/icons/art/stillboot.PNG" alt="Still Boot Album Art" class="album-art">
+			<img src="imgs/art/fromuphere.jpg" alt="From Up Here Album Art" class="album-art">
+			<img src="imgs/art/inthere.PNG" alt="In There Album Art" class="album-art">
+			<img src="imgs/art/stillboot.PNG" alt="Still Boot Album Art" class="album-art">
 			</ul>
 			</div>
 			<div class="box lonely-space-bunny">
@@ -168,20 +159,20 @@
 			<p>This EP, is about a lonely space bunny AMIE. She was originally made for an RPGMaker concept on the right. 
 			The character design was brought to life by my friend drew (@portalpilled) as seen on the cover!</p>
 			<ul>
-				<img src="imgs/icons/art/cover.png" alt="Cover Art" class="album-art">
-				<img src="imgs/icons/art/concept.png" alt="Concept Art" class="album-art">
+				<img src="imgs/art/cover.png" alt="Cover Art" class="album-art">
+				<img src="imgs/art/concept.png" alt="Concept Art" class="album-art">
 			</ul>
 			<p>These are the art for some singles released for the EP. Done by me.</p>
 			<ul>
-				<img src="imgs/icons/art/Lullaby.png" alt="Lullaby Album Art" class="album-art">
-				<img src="imgs/icons/art/Echoes.png" alt="Echoes Album Art" class="album-art">
+				<img src="imgs/art/Lullaby.png" alt="Lullaby Album Art" class="album-art">
+				<img src="imgs/art/Echoes.png" alt="Echoes Album Art" class="album-art">
 			</ul>
 			<p>These are some extra pieces of art (featuring cat.box another character drew went wild designing LOL) 
 			<br>As well as a gif used in the youtube video for the EP</p>
 			<ul>
-				<img src="imgs/icons/art/left_art.png" alt="Left Art" class="album-art">
-				<img src="imgs/icons/art/blink.gif" alt="Blink Animation" class="album-art">
-				<img src="imgs/icons/art/right_art.png" alt="Right Art" class="album-art">
+				<img src="imgs/art/left_art.png" alt="Left Art" class="album-art">
+				<img src="imgs/art/blink.gif" alt="Blink Animation" class="album-art">
+				<img src="imgs/art/right_art.png" alt="Right Art" class="album-art">
 			</ul>
 			</div>
 
@@ -190,29 +181,58 @@
 			<h2>More singles</h2>
 			<p>Some art for singles I have released for non-porojects</p>
 			<ul>
-				<img src="imgs/icons/art/scuffle.png" alt="Scuffle Album Art" class="album-art">
-				<img src="imgs/icons/art/followmefinal.png" alt="Follow Me Final Album Art" class="album-art">
-				<img src="imgs/icons/art/moxie.png" alt="Moxie Album Art" class="album-art">
+				<img src="imgs/art/scuffle.png" alt="Scuffle Album Art" class="album-art">
+				<img src="imgs/art/followmefinal.png" alt="Follow Me Final Album Art" class="album-art">
+				<img src="imgs/art/moxie.png" alt="Moxie Album Art" class="album-art">
 			</ul>
 			
 			<h2>Non music Art</h2>
 			<p>I have more but this is all I could find...</p>
 			<ul>
-				<img src="imgs/icons/art/lilycute.png" alt="Lily Cute Art" class="album-art">
-				<img src="imgs/icons/art/thing.jpg" alt="Thing Art" class="album-art">
-				<img src="imgs/icons/art/echo.png" alt="Echo Art" class="album-art">
+				<img src="imgs/art/lilycute.png" alt="Lily Cute Art" class="album-art">
+				<img src="imgs/art/thing.jpg" alt="Thing Art" class="album-art">
+				<img src="imgs/art/echo.png" alt="Echo Art" class="album-art">
 			</ul>
 			
 			<h2>Art from Friends</h2>
-			<p>Cat and my general "logo" made by Drew portalpilled. The homestuck was made Maya artificialheart</p>
+			<p>Cat and my general "logo" made by Drew portalpilled. The homestuck was made Maya artificialhearted</p>
 			<ul>
-            <img src="imgs/icons/art/catbox.png" alt="Catbox Art" class="album-art">
-            <img src="imgs/icons/art/lilytroll.png" alt="Lily Troll Art" class="album-art">
-			 <img src="imgs/icons/art/mememe.png" alt="Mememe Art" class="album-art">
+            <img src="imgs/art/catbox.png" alt="Catbox Art" class="album-art">
+            <img src="imgs/art/lilytroll.png" alt="Lily Troll Art" class="album-art">
+			 <img src="imgs/art/mememe.png" alt="Mememe Art" class="album-art">
 			</ul>
 			</div>
 		</div>
 		</div>
+
+															<!-- LINKS!! -->		
+
+
+
+<div class="box" id="3" style="display:none;">
+    <img alt="My logo" class="icon" src="imgs/icons/characters/me.png">
+    <div>
+        <h2><u>Music Player</u></h2>
+		<p>Here is some of my music :></p>
+		            <button id="stop">Eject</button>
+					<audio id="audio" src="snd/song1.mp3"></audio>
+        <ul>
+            <img src="imgs/cd/cd1.png" alt="CD Album Art 1" class="album-art cd" data-audio-src="snd/1stargazing.mp3">
+            <img src="imgs/cd/cd2.png" alt="CD Album Art 2" class="album-art cd" data-audio-src="snd/2arenthalfway.mp3">
+            <img src="imgs/cd/cd3.png" alt="CD Album Art 3" class="album-art cd" data-audio-src="snd/3scuffle.mp3">
+			<img src="imgs/cd/cd1.png" alt="CD Album Art 4" class="album-art cd" data-audio-src="snd/4lullaby.mp3">
+            <img src="imgs/cd/cd2.png" alt="CD Album Art 5" class="album-art cd" data-audio-src="snd/5crumbling.mp3">
+            <img src="imgs/cd/cd4.png" alt="CD Album Art 6" class="album-art cd" data-audio-src="snd/6moxie.mp3">
+        </ul>
+        
+        <div class="controls">
+            <button style="display:none" id="play">Play</button>
+
+        </div>
+    </div>
+</div>
+
+
 		
 		<footer style="padding: 20vh;"></footer>
 	</body>

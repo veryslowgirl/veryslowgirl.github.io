@@ -1,7 +1,7 @@
 body {
-    background-image: url("imgs/sitestuff/bg.png"); ;
+    background-image: url("imgs/sitestuff/bg.png");
     font-family: "Questrial", sans-serif;
-	font-weight: bold;
+    font-weight: bold;
 }
 
 ul {
@@ -20,7 +20,7 @@ ul {
     margin: auto;
     margin-bottom: 1vh;
     padding: 10px;
-	filter: drop-shadow(0px 0px 4px black);
+    filter: drop-shadow(0px 0px 4px black);
 }
 
 .look-ahead {
@@ -35,13 +35,22 @@ ul {
     filter: drop-shadow(0px 0px 4px black);
 }
 
-h2,p {
+h2, p {
     text-align: center;
+    margin: 0 auto;
 }
+
+}
+
 
 p {
     font-size: medium;
-	width: 98%;
+	line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.embed {
+    margin: 2vh 0;
 }
 
 .logo {
@@ -50,14 +59,15 @@ p {
 }
 
 .banner, .icon {
-	display: flex;
-    margin: 0 auto;
-	width: 20vh;
-	filter: drop-shadow(0px 0px 10px black);
+    display: flex;
+    margin: 1.5vh auto;
+    filter: drop-shadow(0px 0px 10px black);
 }
+
 .banner {
     width: 25vh;
 }
+
 .icon {
     width: 15vh;
 }
@@ -67,21 +77,34 @@ p {
     width: 100%;
     max-width: 300px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: drop-shadow(0px 1px 4px black);
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+
 
 .album-art:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 1px 6px black);
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg); 
+    }
 }
 
 a {
-	cursor: pointer;
-	text-decoration: underline;
+    cursor: pointer;
+    text-decoration: underline;
 }
+
 button {
-	color: #000;
+    color: #000;
     text-align: center;
     padding: 14px 20px;
     margin: 10px auto;
@@ -92,25 +115,31 @@ button {
     display: block;
 }
 
+button:hover {
+    opacity: 0.8;
+}
+
+
 .star {
     position: absolute;
 }
 
-button:hover {
-    opacity: 0.8;
-}
+
 
 @media screen and (max-width: 900px) {
     ul, button {
         width: 90%;
         border-radius: 25px;
-		margin: 0 auto;
-		margin-top: 1vw;
+        margin: 0 auto;
+        margin-top: 1vw;
         margin-bottom: 1vw;
     }
-    
+
     .box {
-        width: 95%;   
+        width: 95%;
         padding: 10px;
+    }
+	.cd {
+        width: 33%;
     }
 }

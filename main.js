@@ -1,10 +1,15 @@
-let images = [];
 var honse = false;
+
+
+
 function horse() {
 	honse = !honse;
 }
-function boxtoggle(page) {
-	boxreset();
+function boxtoggle(page, special) {
+	if (!special)
+	{
+		boxreset();
+	}
         var x = document.getElementById(page);
 		
         if (x.style.display === "none") {
@@ -18,7 +23,7 @@ function boxtoggle(page) {
 
 function boxreset()
 {
-for (let n = 1; n <= 4; n++)
+for (let n = 1; n <= 3; n++)
 	{
 	 	var x = document.getElementById(n);
 		if (x.style.display === "block") {
@@ -26,6 +31,42 @@ for (let n = 1; n <= 4; n++)
         	}
 	}
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const playButton = document.getElementById('play');
+    const stopButton = document.getElementById('stop');
+    const audio = document.getElementById('audio');
+    const cds = document.querySelectorAll('.cd');
+
+    cds.forEach(cd => {
+        cd.addEventListener('click', () => {
+            const newSrc = cd.getAttribute('data-audio-src');
+            audio.src = newSrc;
+            audio.play();
+            cds.forEach(c => c.style.animation = '');
+            cd.style.animation = 'spin 1s linear infinite';
+        });
+    });
+
+    playButton.addEventListener('click', () => {
+        audio.play();
+        cds.forEach(cd => cd.style.animation = 'spin 1s linear infinite');
+    });
+
+    stopButton.addEventListener('click', () => {
+        audio.pause();
+        audio.currentTime = 0; 
+        cds.forEach(cd => cd.style.animation = ''); 
+    });
+
+
+    audio.addEventListener('ended', () => {
+        cds.forEach(cd => cd.style.animation = '');
+    });
+});
+
+
+
 
 let stars = []; 
 function sparkle() {

@@ -1,7 +1,5 @@
 var honse = false;
 
-
-
 function horse() {
 	honse = !honse;
 }

@@ -21,7 +21,7 @@ function boxtoggle(page, special) {
 
 function boxreset()
 {
-for (let n = 1; n <= 3; n++)
+for (let n = 1; n <= 4; n++)
 	{
 	 	var x = document.getElementById(n);
 		if (x.style.display === "block") {

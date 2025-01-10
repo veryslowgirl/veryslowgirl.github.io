@@ -126,7 +126,7 @@ button:hover {
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     ul, button {
         width: 90%;
         border-radius: 25px;

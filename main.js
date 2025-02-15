@@ -2,6 +2,18 @@ var honse = false;
 
 function horse() {
 	honse = !honse;
+	vsg.style.animation = 'spin 0.5s linear 1';
+	vsg.onanimationend = () => {
+	vsg.style.animation = '';
+	};
+	if (honse)
+	{
+		vsg.src = "imgs/sitestuff/honse.gif";
+	}
+	else
+	{
+		vsg.src = "imgs/icons/characters/meflip.png";
+	}
 }
 function boxtoggle(page, special) {
 	if (!special)
@@ -90,8 +102,8 @@ function sparkle() {
 
             if (honse == true) {
                 img.src = "imgs/sitestuff/honse.gif";
-                img.style.width = "120px";
-                img.style.height = "120px";
+                img.style.width = "85px";
+                img.style.height = "85px";
             } else {
                 img.src = "imgs/sitestuff/star.gif";
                 img.style.width = "45px";

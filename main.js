@@ -1,5 +1,5 @@
 var honse = false;
-
+var num = false;
 function horse() {
 	honse = !honse;
 	vsg.style.animation = 'spin 0.5s linear 1';
@@ -28,6 +28,20 @@ function boxtoggle(page, special) {
 
 	else {
     		x.style.display = "none"; }
+}
+
+function togglenavi() {
+	if (num == false)
+	{
+		num = true;
+		togglenavi();
+	}
+        if (navi.style.display === "none") {
+        	navi.style.display = "block";
+        } 
+
+	else {
+    		navi.style.display = "none"; }
 }
 
 

@@ -60,16 +60,22 @@ p {
 
 .banner, .icon {
     display: flex;
-    margin: 1.5vh auto;
+    
     filter: drop-shadow(0px 0px 10px black);
 }
 
 .banner {
     width: 25vh;
+	margin: 1.5vh auto;
+}
+
+.burger {
+	display: none;
 }
 
 .icon {
     width: 128;
+	margin: 0 auto;
 }
 
 .album-art {
@@ -124,22 +130,34 @@ button:hover {
     position: absolute;
 }
 
-
-
 @media screen and (max-width: 1200px) {
     ul, button {
-        width: 90%;
-        border-radius: 25px;
+        width: 100%;
         margin: 0 auto;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
     }
 
     .box {
-        width: 95%;
-        padding: 10px;
+        width: 100%;
+		min-height: 9vh;
+        padding: 0px;
     }
-	.cd {
-        width: 33%;
-    }
+	
+	.burger {
+	display:block;
+	}
+	
+	#navi {
+	display:none;
+	}
+
+	.toplogo{
+	 height: 8vh;
+	 float: left;
+	}
+	.burger {
+	height: 8vh;
+	float: right; 
+	margin: 0px 0px 15px 15px;
+	}
+
 }

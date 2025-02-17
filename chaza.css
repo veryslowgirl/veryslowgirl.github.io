@@ -80,7 +80,6 @@ p {
 
 .album-art {
     display: block;
-    width: 100%;
     max-width: 300px;
     border-radius: 10px;
     filter: drop-shadow(0px 1px 4px black);
@@ -160,4 +159,9 @@ button:hover {
 	margin: 0px 0px 15px 15px;
 	}
 
+	.album-art {
+	width:70%;
+	max-width: 60vh;
+	border-radius: 0px;
+	}
 }

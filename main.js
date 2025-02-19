@@ -1,68 +1,61 @@
-var honse = false;
-var num = false;
-function horse() {
-	honse = !honse;
-	vsg.style.animation = 'spin 0.5s linear 1';
-	vsg.onanimationend = () => {
-	vsg.style.animation = '';
-	};
-	if (honse)
-	{
-		vsg.src = "imgs/sitestuff/honse.gif";
-	}
-	else
-	{
-		vsg.src = "imgs/icons/characters/meflip.png";
-	}
+function detectMobile() {
+    return ( window.innerWidth <= 1200 );
 }
-function boxtoggle(page, special) {
-	if (!special)
-	{
-		boxreset();
-	}
-        var x = document.getElementById(page);
-		
-        if (x.style.display === "none") {
-        	x.style.display = "block";
-        } 
-
-	else {
-    		x.style.display = "none"; }
-}
-
-function togglenavi() {
-	if (num == false)
-	{
-		num = true;
-		togglenavi();
-	}
-        if (navi.style.display === "none") {
-        	navi.style.display = "block";
-        } 
-
-	else {
-    		navi.style.display = "none"; }
-}
-
-
-function boxreset()
+  
+function onInit()
 {
-for (let n = 1; n <= 4; n++)
+
+	if (detectMobile())
 	{
-	 	var x = document.getElementById(n);
-		if (x.style.display === "block") {
-        	x.style.display = "none";
-        	}
+		setupMobile();
+	}
+	setupSparkle();
+	setupMusic();
+	pageSwitcher('musicpage')
+}
+
+function setupMobile()
+{
+	toggleNavi();
+}
+
+function toggleNavi() {
+    if (navi.style.display === "none") {
+        	navi.style.display = "block";
+    }
+	else {
+    		navi.style.display = "none"; 
 	}
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const playButton = document.getElementById('play');
+const pages = ["homepage", "musicpage", "artpage", "extraspage"];
+
+function pageSwitcher(page) {
+    pageReset();
+    let x = document.getElementById(page);
+    if (x) {
+        x.style.display = "block";
+    }
+}
+
+function pageReset() {
+	if (detectMobile())
+	{
+		toggleNavi();
+	}
+    pages.forEach(page => {
+        let x = document.getElementById(page);
+        if (x) {
+            x.style.display = "none";
+        }
+    });
+}
+
+function setupMusic() {
     const stopButton = document.getElementById('stop');
     const audio = document.getElementById('audio');
     const cds = document.querySelectorAll('.cd');
-
-    cds.forEach(cd => {
+	    cds.forEach(cd => {
         cd.addEventListener('click', () => {
             const newSrc = cd.getAttribute('data-audio-src');
             audio.src = newSrc;
@@ -71,69 +64,91 @@ document.addEventListener('DOMContentLoaded', () => {
             cd.style.animation = 'spin 1s linear infinite';
         });
     });
-
-    playButton.addEventListener('click', () => {
-        audio.play();
-        cds.forEach(cd => cd.style.animation = 'spin 1s linear infinite');
-    });
-
-    stopButton.addEventListener('click', () => {
+	stopButton.addEventListener('click', () => {
         audio.pause();
         audio.currentTime = 0; 
         cds.forEach(cd => cd.style.animation = ''); 
     });
-
-
-    audio.addEventListener('ended', () => {
+	audio.addEventListener('ended', () => {
         cds.forEach(cd => cd.style.animation = '');
     });
-});
+}
 
-
-
-
+const maxStars = 30;
+const starSize = 45;
+const HorseSize = 85;
+const timeBetween = 120;
+const mobilebounds = 0;
 let stars = []; 
-function sparkle() {
-    var width = (window.innerWidth - 120);
-    var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
-    for (let n = 0; n <= 15; n++) {
-        var num;
-        if (honse == true) {
-            num = 120;
-        } else {
-            num = 45;
-        }
-
-        let img = new Image(num);
-        img.className = "star";
-        img.style.left = Math.floor(Math.random() * width) + "px";
-        img.style.top = Math.floor(Math.random() * height) + "px";
-        let hueRotation = Math.floor(Math.random() * 360);
+function setupSparkle() {	
+    for (let i = 0; i <= maxStars; i++) {
+		let width = ((document.documentElement.getBoundingClientRect().width) - 170); 
+        let height = ((document.documentElement.getBoundingClientRect().height) - 100);
         setTimeout(() => {
-            document.getElementById('booty').appendChild(img);
-            stars.push(img);
+            createStar(width, height);
 
-            if (honse == true) {
-                img.src = "imgs/sitestuff/honse.gif";
-                img.style.width = "85px";
-                img.style.height = "85px";
-            } else {
-                img.src = "imgs/sitestuff/star.gif";
-                img.style.width = "45px";
-                img.style.height = "45px";
+            if (stars.length > maxStars) {
+                stars.shift().remove();
             }
 
-            if (stars.length > 15) {
-                let oldStar = stars.shift();
-                oldStar.remove();
+            if (i === maxStars) {
+                setTimeout(setupSparkle, timeBetween * i);
             }
-        }, n * 180);
-
-        if (n == 15) {
-            setTimeout(() => {
-                sparkle();
-            }, n * 180);
-        }
+        }, i * timeBetween);
     }
 }
+
+function createStar(width, height) {
+    let img = new Image();
+    img.className = "star";
+    img.style.left = (Math.floor(Math.random() * width)+85) + "px";
+    img.style.top = Math.floor(Math.random() * height) + "px";
+
+    let isHonse = honse === true;
+    img.src = isHonse ? "imgs/sitestuff/honse.gif" : "imgs/sitestuff/star.gif";
+    img.style.width = isHonse ? HorseSize + "px" : starSize + "px";
+    img.style.height = isHonse ? HorseSize + "px" : starSize + "px";
+
+    document.getElementById('starContainer').appendChild(img);
+    stars.push(img);
+}
+
+let honse = false;
+
+function BTN_home(){
+	const randomNum = Math.floor(Math.random() * 25);
+	if (randomNum === 0) {
+		honse = true;
+		vsg.src = "imgs/sitestuff/honse.gif";
+	}
+	else {
+    honse = false;
+	vsg.src = "imgs/icons/characters/meflip.png";
+	}
+	
+	vsg.style.animation = 'spin 0.5s linear 1';
+	vsg.onanimationend = () => {
+	vsg.style.animation = '';
+	if (detectMobile())
+	{
+		pageSwitcher('homepage');
+		toggleNavi();
+	}
+	}
+}
+
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+

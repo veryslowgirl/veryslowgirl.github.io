@@ -1,68 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Questrial&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="chaza.css" rel="stylesheet" type="text/css">
-		<title>veryslowgirl</title> <link rel="shortcut icon" href="imgs/sitestuff/logo.ico">
- 		<script type="text/javascript" src="main.js">onInit();</script>
-		<meta name="title" content="veryslowgirl site" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="chaza.css">
 
-	</head>
-	<body onload="sparkle()">
-	 <div id="booty"></div>
-
-
+    <title>veryslowgirl</title>
+    <meta name="description" content="A site to keep my music, videos and hobbies in one place.">
+    <meta name="keywords" content="music, youtube, look ahead, lonely space bunny music, video game music">
+    <meta name="author" content="Lily veryslowgirl">
+	
+    <link rel="shortcut icon" href="imgs/sitestuff/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Questrial&display=swap" rel="stylesheet">
+  </head>
+	<body onload="onInit()">
+	 <div id="starContainer"></div>
 															<!-- Naviagation Bar -->		
-
-
-
 		<div class="box">
 				
-				<img alt = "mascot art by @portalpilled" id="vsg" class="icon toplogo" onclick="horse();" src="imgs/icons/characters/meflip.png">
-				<img alt = "icon" class="icon burger" src="imgs/sitestuff/burger.png" onclick="togglenavi();">
-				<ul id ="navi">
-				<button onclick="boxtoggle(1, false);">About Me</button>
-				<button onclick="boxtoggle(2, false)">Gallery</button>
-				<button onclick="boxtoggle(3, false)">Music</button>
-				<button onclick="boxtoggle(4, false)">More</button>
+				<img alt = "mascot art by @portalpilled" id="vsg" class="icon toplogo" onclick="BTN_home();" src="imgs/icons/characters/meflip.png">
+				<img alt = "icon" class="icon burger" src="imgs/sitestuff/burger.png" onclick="toggleNavi();">
+				<div id ="navi">
+				<ul>
+				<button onclick="pageSwitcher('homepage');">About Me</button>
+				<button onclick="pageSwitcher('musicpage')">Music</button>
+				<button onclick="pageSwitcher('artpage')">Gallery</button>
+				<button onclick="pageSwitcher('extraspage')">More</button>
 				</ul>
+				</div>
 		</div>
-
 															<!-- Info About me -->		
-
-
-
-	<div  id="1" style="display:block">
-		<div class="box">
-			<h2><u>Hi, I'm Lily!</u></h2>
+	<div  id="homepage" style="display:block">
+	<ul>
+		<div class="box smallbox">
+			<h3><u>Hi, I'm Lily!</u></h3>
+				
 				<p class="info" >
-				This site is a place for WHAT i want. Mostly just info about me.
-				<br>
-				I do a variety of creative things.
-				Music, Videos, coding!! Stuff like that.
-				<br><br>
-				Links below r important if u wanna find me elsewhere.. Navigate above for specifics on what I do.
-				<br><br> Thank u:)
+				I'm a 20 year old trans girl<img class="right" src="imgs\sitestuff\bunny.png"> <span class="smallinfo">(She/her)™</span></p>
+				<p class="smallinfo">
+				* I make Music<br><br>
+				* I make youtube videos<br><br>
+				* I like coding<br><br>
+				* I like doing projects. Generally.
 				</p>
+				<p class="info">
+				Here are some links to where I am elsewhere if u wanna pester me (jk.)
+				At the top theres navigation to more info abt me :)
+				</p>
+				
+				
 		</div>
-		<div class="box">
+		
+				<div class="box smallbox">
 			<img alt = "banner saying music" src="imgs/sitestuff/banner4.png"  class="banner">
 			<div style="display:block">
-			<p>This is where I am everywhere... Feel free to contact me on anything! :) </p>
-			<p><img alt = "twitter doodle" class="logo" src="imgs/icons/twitter.png"><a href="https://x.com/veryslowgirl" target=”_blank”><u>veryslowgirl</u> </a> </p>
-			<p><img alt = "youtube doodle" class="logo" src="imgs/icons/youtube.png"><a href="https://www.youtube.com/@chazaswag"target=”_blank”><u>veryslowgirl</u> </a> </p>
-			<p><img alt = "soundcloud doodle" class="logo" src="imgs/icons/sc.png"><a href="https://soundcloud.com/veryslowgirl/"target=”_blank”><u>veryslowgirl</u> </a> </p>
-			<p><img alt = "spotify doodle" class="logo" src="imgs/icons/spotify.png"><a href="https://open.spotify.com/artist/4NXx0K3dzPFILOFXjV8KKU?si=XHNFEdQ8TNWv9uVR8HLwGA"target=”_blank”><u>veryslowgirl</u> </a> </p>
-    		<p><img alt = "discord doodle" class="logo" src="imgs/icons/discord.png">@veryslowgirl</p>
-			<p><img alt = "itch.io doodle" class="logo" src="imgs/icons/itch.png"><a href="https://chazaswag.itch.io/" target=”_blank”><u>chazaswag</u> </a> </p>
-			<p><img alt = "gamebanana doodle" class="logo" src="imgs/icons/gamebanana.png"><a href="https://gamebanana.com/members/2118879" target=”_blank”><u>chazaswag</u> </a> </p>
+			<p class="links"><img alt = "twitter doodle" class="logo" src="imgs/icons/twitter.png"><a href="https://x.com/veryslowgirl" target=”_blank”><u>veryslowgirl</u> </a> </p>
+			<p class="links"><img alt = "youtube doodle" class="logo" src="imgs/icons/youtube.png"><a href="https://www.youtube.com/@chazaswag"target=”_blank”><u>veryslowgirl</u> </a> </p>
+			<p class="links"><img alt = "soundcloud doodle" class="logo" src="imgs/icons/sc.png"><a href="https://soundcloud.com/veryslowgirl/"target=”_blank”><u>veryslowgirl</u> </a> </p>
+			<p class="links"><img alt = "spotify doodle" class="logo" src="imgs/icons/spotify.png"><a href="https://open.spotify.com/artist/4NXx0K3dzPFILOFXjV8KKU?si=XHNFEdQ8TNWv9uVR8HLwGA"target=”_blank”><u>veryslowgirl</u> </a> </p>
+    		<p class="links"><img alt = "discord doodle" class="logo" src="imgs/icons/discord.png">@veryslowgirl</p>
+			<p class="links"><img alt = "discord doodle" class="logo" src="imgs/icons/discord.png"><a href="https://discord.gg/Sbu6f5WxeG"target=”_blank”><u>Shared Discord Server</u> </a> </p>
 		</div>
 		</div>
+	</ul>
+		
 		</div>
 		</div>
+
+															<!-- Music!! -->		
+
+<div  id="musicpage" style="display: none;">
+<div class="box">	
+    
+        <img 
+            alt="banner saying music" 
+            src="imgs/sitestuff/banner.png" 
+            class="banner"
+        >
+		<h3>Look Ahead!</h3>
+        <p class="smallinfo">
+            In June of 2024, I released "Look Ahead!" It is an EP based around the idea of an RPG following three kids 
+            and their journey up a mountain. The art was done by my boyfie Drew, 
+            and the full EP was made in about a month or so. It is video game inspired, specifically by Celeste, with 
+            a mix of some chiptune songs and other styles.It is pretty short, but it's worth checking out! 
+			(If you want, you can listen below, as well as on Spotify, 
+            SoundCloud, Bandcamp, and many other platforms.)
+        </p>
+        <ul>
+            <iframe 
+                class="embed" 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/60UDzFBO100?si=_WteKhsVU3WAKpZc" 
+			>
+            </iframe>
+        </ul>
+		<br>
+		<h3 class="inforight">Lonely Space Bunny Music</h3>
+        <p class="inforight">
+            In November 2024, I released a second, shorter EP of five songs.
+			A compilation of tracks I made after making Look Ahead. I wanted a smaller undertaking with a more concrete concept.
+            It is about a lonely space bunny, hence the name. She is called Amie. She is alone, on a space station, 
+            and she has been alone for a long time. You can listen to it below
+			(If you want, you can listen below, as well as on Spotify, 
+            SoundCloud, Bandcamp, and many other platforms.)
+        </p>
+        <ul>
+            <iframe 
+                class="embed" 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/WxjlnPSxCd4?si=q41zqoWjUQnFQguu" 
+				>
+            </iframe>
+        </ul>
+
+        <p>
+            I am making new music every now and again! Check my Twitter or SoundCloud to be updated first!!<br><br>
+            My music is on most platforms, including Spotify, SoundCloud, Apple Music, and YouTube.<br>
+        </p>
+    </ul>
+</div>
+    <div class="box">
+        <img 
+            alt="My logo" 
+            class="icon" 
+            src="imgs/icons/characters/me.png"
+        >
+        <div>
+            <h2><u>Music Player</u></h2>
+            <p>Here is some of my music :></p>
+            <button id="stop">Eject</button>
+            <audio id="audio" src="snd/song1.mp3"></audio>
+            <ul>
+                <img 
+                    src="imgs/cd/cd1.webp" 
+                    alt="CD Album Art 1" 
+                    class="album-art cd" 
+                    data-audio-src="snd/1stargazing.mp3"
+                >
+                <img 
+                    src="imgs/cd/cd2.webp" 
+                    alt="CD Album Art 2" 
+                    class="album-art cd" 
+                    data-audio-src="snd/2arenthalfway.mp3"
+                >
+                <img 
+                    src="imgs/cd/cd3.webp" 
+                    alt="CD Album Art 3" 
+                    class="album-art cd" 
+                    data-audio-src="snd/3scuffle.mp3"
+                >
+            </ul>
+            
+        </div>
+    </div>
+</div>
 
 	
 
@@ -70,7 +166,7 @@
 
 
 
-		<div  id="2" style="display:none">
+		<div  id="artpage" style="display:none">
 			<div class="box nout">
 			<img alt = "doodle character for links" class="icon" src="imgs/icons/characters/art.png"><div><h2><u> Gallery </u></h2>
 			</div></div>
@@ -126,105 +222,7 @@
 		</div>
 		</div>
 
-															<!-- LINKS!! -->		
-
-<div  id="3" style="display: none;">
-<div class="box">	
-    
-        <img 
-            alt="banner saying music" 
-            src="imgs/sitestuff/banner.png" 
-            onclick="boxtoggle(4, true);" 
-            class="banner"
-        >
-        <p>
-            In June of 2024, I released "Look Ahead!" It is an EP based around the idea of an RPG following three kids 
-            and their journey up a mountain. <a onclick="boxtoggle(4);">The art</a> was done by my good friend Drew, 
-            and the full EP was made in about a month or so. It is video game inspired, specifically by Celeste, with 
-            a mix of some chiptune songs and other styles.<br><br>
-
-            It is pretty short, but it's worth checking out! (If you want, you can listen below, as well as on Spotify, 
-            SoundCloud, Bandcamp, and many other platforms.)
-        </p>
-        <ul>
-            <iframe 
-                class="embed" 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/60UDzFBO100?si=_WteKhsVU3WAKpZc&controls=0" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
-        </ul>
-
-        <p>
-            In November 2024, I released a second, shorter EP of four songs. It is called "Lonely Space Bunny Music." 
-            It is about a lonely space bunny, hence the name. She is called Amie. She is alone, on a space station, 
-            and she has been alone for a long time. You can listen to it below :>
-        </p>
-        <ul>
-            <iframe 
-                class="embed" 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/WxjlnPSxCd4?si=q41zqoWjUQnFQguu" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
-        </ul>
-
-        <p>
-            I am making new music every now and again! Check my Twitter or SoundCloud to be updated first!!<br><br>
-            My music is on most platforms, including Spotify, SoundCloud, Apple Music, and YouTube.<br>
-        </p>
-    </ul>
-</div>
-    <div class="box">
-        <img 
-            alt="My logo" 
-            class="icon" 
-            src="imgs/icons/characters/me.png"
-        >
-        <div>
-            <h2><u>Music Player</u></h2>
-            <p>Here is some of my music :></p>
-            <button id="stop">Eject</button>
-            <audio id="audio" src="snd/song1.mp3"></audio>
-            <ul>
-                <img 
-                    src="imgs/cd/cd1.webp" 
-                    alt="CD Album Art 1" 
-                    class="album-art cd" 
-                    data-audio-src="snd/1stargazing.mp3"
-                >
-                <img 
-                    src="imgs/cd/cd2.webp" 
-                    alt="CD Album Art 2" 
-                    class="album-art cd" 
-                    data-audio-src="snd/2arenthalfway.mp3"
-                >
-                <img 
-                    src="imgs/cd/cd3.webp" 
-                    alt="CD Album Art 3" 
-                    class="album-art cd" 
-                    data-audio-src="snd/3scuffle.mp3"
-                >
-            </ul>
-            
-            <div class="controls">
-                <button style="display: none;" id="play">Play</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div  id="4" style="display: none;">
+<div  id="extraspage" style="display: none;">
 <div class="box">
 				<img alt = "banner saying games" src="imgs/sitestuff/banner2.png" class="banner">
 				<div style="display:block">

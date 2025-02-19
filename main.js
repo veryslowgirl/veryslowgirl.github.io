@@ -11,7 +11,6 @@ function onInit()
 	}
 	setupSparkle();
 	setupMusic();
-	pageSwitcher('musicpage')
 }
 
 function setupMobile()

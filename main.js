@@ -13,9 +13,17 @@ function onInit()
 	setupMusic();
 }
 
-function checkUrl(){
-	let command = decodeURIComponent(window.location.search.substring(1));
-	eval(command);
+function checkUrl() {
+    let command = decodeURIComponent(window.location.search.substring(1));
+    if (command) {
+        if (pages.includes(command)) {
+            pageSwitcher(command);
+			if (detectMobile()) {
+            setupMobile();
+        }
+        }
+    }
+	history.replaceState(null, null, window.location.pathname);
 }
 function setupMobile()
 {

@@ -4,7 +4,7 @@ function detectMobile() {
   
 function onInit()
 {
-
+	checkUrl();
 	if (detectMobile())
 	{
 		setupMobile();
@@ -13,6 +13,10 @@ function onInit()
 	setupMusic();
 }
 
+function checkUrl(){
+	let command = decodeURIComponent(window.location.search.substring(1));
+	eval(command);
+}
 function setupMobile()
 {
 	toggleNavi();

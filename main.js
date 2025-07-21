@@ -39,11 +39,11 @@ function toggleNavi() {
 	}
 }
 
-const pages = ["homepage", "musicpage", "artpage", "extraspage"];
+const pages = ["homepage", "musicpage", "artpage", "extraspage", "slightly"];
 
 function pageSwitcher(page) {
     pageReset();
-    let x = document.getElementById(page);
+    let x = document.getElementById(page);	
     if (x) {
         x.style.display = "block";
     }
@@ -69,20 +69,20 @@ function setupMusic() {
 	    cds.forEach(cd => {
         cd.addEventListener('click', () => {
             const newSrc = cd.getAttribute('data-audio-src');
-            audio.src = newSrc;
-            audio.play();
+           // audio.src = newSrc;
+           // audio.play();
             cds.forEach(c => c.style.animation = '');
-            cd.style.animation = 'spin 1s linear infinite';
+            cd.style.animation = 'spin 1s linear';
         });
     });
-	stopButton.addEventListener('click', () => {
-        audio.pause();
-        audio.currentTime = 0; 
-        cds.forEach(cd => cd.style.animation = ''); 
-    });
-	audio.addEventListener('ended', () => {
-        cds.forEach(cd => cd.style.animation = '');
-    });
+	//stopButton.addEventListener('click', () => {
+   //     audio.pause();
+  //      audio.currentTime = 0; 
+  //      cds.forEach(cd => cd.style.animation = ''); 
+  //  });
+	//audio.addEventListener('ended', () => {
+   //     cds.forEach(cd => cd.style.animation = '');
+  //  });
 }
 
 const maxStars = 30;

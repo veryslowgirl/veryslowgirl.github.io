@@ -53,6 +53,7 @@ h2, p {
 h3 {
     font-size: xxx-large;
 	margin: 0;
+	text-align: center;
 }
 
 .info {
@@ -63,6 +64,9 @@ h3 {
 
 .inforight {
 	text-align: right;
+}
+.infoleft {
+	text-align: left;
 }
 
 .smallinfo {
@@ -92,7 +96,6 @@ p {
 .banner, .icon {
     display: flex;
     
-    filter: drop-shadow(0px 0px 10px black);
 }
 
 .banner {
@@ -191,7 +194,7 @@ button:hover {
 	}
 
 	.album-art {
-	width:70%;
+	width:45%;
 	max-width: 60vh;
 	border-radius: 0px;
 	}

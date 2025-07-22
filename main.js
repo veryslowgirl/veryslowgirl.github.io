@@ -5,6 +5,7 @@ function detectMobile() {
 function onInit()
 {
 	checkUrl();
+	document.getElementById('homeicon').src = getRandomImage("imgs/sitestuff/bunny.png", "imgs/sitestuff/bunny2.png");
 	if (detectMobile())
 	{
 		setupMobile();
@@ -39,7 +40,7 @@ function toggleNavi() {
 	}
 }
 
-const pages = ["homepage", "musicpage", "artpage", "extraspage", "slightly"];
+const pages = ["homepage", "musicpage", "artpage", "extraspage"];
 
 function pageSwitcher(page) {
     pageReset();
@@ -54,6 +55,7 @@ function pageReset() {
 	{
 		toggleNavi();
 	}
+	document.getElementById('homeicon').src = "imgs/sitestuff/bunny.png";
     pages.forEach(page => {
         let x = document.getElementById(page);
         if (x) {
@@ -72,7 +74,7 @@ function setupMusic() {
            // audio.src = newSrc;
            // audio.play();
             cds.forEach(c => c.style.animation = '');
-            cd.style.animation = 'spin 1s linear';
+            cd.style.animation = 'spin 1s linear 5';
         });
     });
 	//stopButton.addEventListener('click', () => {
@@ -85,7 +87,7 @@ function setupMusic() {
   //  });
 }
 
-const maxStars = 30;
+const maxStars = 10;
 const starSize = 45;
 const HorseSize = 85;
 const timeBetween = 120;
@@ -125,7 +127,13 @@ function createStar(width, height) {
     stars.push(img);
 }
 
+function getRandomImage(defaultSrc, altSrc) {
+    return Math.random() < 0.05 ? altSrc : defaultSrc;
+}
+
+
 let honse = false;
+let sfb = false;
 
 function BTN_home(){
 	const randomNum = Math.floor(Math.random() * 25);

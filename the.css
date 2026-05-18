@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+	background: #396EA8;
+	background: linear-gradient(51deg, rgba(57, 110, 168, 1) 0%, rgba(33, 74, 147, 1) 60%, rgba(25, 63, 141, 1) 82%);
+
+    font-family: "Raleway", sans-serif;
+    overflow: hidden;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg,#396ea8,#193f8d);
+  background-size: 120% 120%;
+  animation: gradient-animation 1.5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.box {
+    width: 30vw;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+background: linear-gradient(300deg,rgba(148,190,200,25),rgba(148,170,200,25));
+	animation: gradient-animation 1s ease infinite;
+   
+    color: #093356;
+}
+
+@media screen and (max-width: 800px) {
+    .box {
+        width: 90%; 
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
+.banner {
+	 width: 55%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.links a {
+    text-decoration: none;
+
+    color: #093356;
+
+    background: rgba(255,255,255,0.18);
+
+    padding: 14px;
+
+    border-radius: 16px;
+
+    transition: 0.25s ease;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    font-weight: bold;
+}

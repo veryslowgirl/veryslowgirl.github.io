@@ -4,21 +4,19 @@
 }
 body {
     margin: 0;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: RPG;
     font-size: 200%;
-    overflow: hidden;
     cursor: url(images/mu.gif),auto;
 }
 
 .scrolling-image-container {
   position: fixed;
   inset: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   z-index: -1;
 }
@@ -47,7 +45,7 @@ body {
 }
 
 .box {
-    width: 20vw;
+    width: 40vw;
 
     padding: 30px;
 
@@ -55,14 +53,14 @@ body {
 
     border-radius: 30px;
 
-background: linear-gradient(300deg,rgba(0, 0, 54, 0),rgba(0, 0, 70, 0));
+background: linear-gradient(300deg,rgba(0, 0, 54),rgba(0, 0, 70));
 	animation: gradient-animation 1s ease infinite;
-  color: #093356;
+  color: rgba(132, 222, 255, 0.5);
 }
 
 @media screen and (max-width: 1500px) {
     .box {
-      width: 35vw; 
+      width: 60vw; 
         margin: 0 auto;
         padding: 10px;
     }
@@ -79,7 +77,7 @@ background: linear-gradient(300deg,rgba(0, 0, 54, 0),rgba(0, 0, 70, 0));
 
 .banner {
 	 width: 70%;
-   opacity: 0.85;
+   opacity: 0.7;
    transform: translate(0, 5px);
 }
 
@@ -100,12 +98,6 @@ background: linear-gradient(300deg,rgba(0, 0, 54, 0),rgba(0, 0, 70, 0));
     font-weight: bold;
 }
 
-a:hover{
-  background-color: rgb(46, 110, 238);
-  color: rgba(255, 255, 255, 0.5);
-  cursor: none;
-}
-
 a:hover .pointer{
   opacity: 1;
   animation: blink-animation 1.5s steps(1, start) infinite;
@@ -121,8 +113,6 @@ a:hover .pointer{
 }
 
 .icon{
-  position: absolute;
-  transform: translate(50%, -20%);
   width:64px;
   image-rendering: pixelated;
 }
